@@ -1,27 +1,36 @@
-# Rank1 Infotech Dashboard
+# 🏢 SocietyFlow – Apartment Maintenance Management Platform
 
-## Free development login
-This build uses DummyJSON for authentication and local browser data for dashboard operations, so the project can run without a Node/.NET backend during UI development.
+A full-stack web application designed to simplify apartment management by centralizing resident complaints, maintenance requests, and payment records.
 
-Demo credentials:
-- Username: `emilys`
-- Password: `emilyspass`
-- Tenant/Society Code: `DLF-PARK-PLACE` (currently a UI field; DummyJSON does not validate it)
+### 🛠️ Tech Stack
 
-DummyJSON returns a JWT access token and refresh token from `/auth/login`. The app stores the access token, validates it with `/auth/me` on page reload, adds it as a Bearer token for the auth check, and redirects to login when a protected call returns 401.
+![React](https://img.shields.io/badge/React.js-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
 
-## Run
-```cmd
-npm install
-npm run dev
-```
+### ✨ Key Features
 
-Open the Vite URL, usually `http://localhost:5173`.
+- 🛠️ **Complaint Management:** Submit, track, and update maintenance complaints.
+- 👥 **Role-Based Access:** Separate access and functionality for residents and administrators.
+- 💳 **Payment Records:** Maintain and manage apartment maintenance payment information.
+- 🔐 **Secure Authentication:** JWT-based authentication and protected API access.
+- 🔄 **REST APIs:** Integrate frontend and backend for efficient data management.
 
-## Switch to your ASP.NET Core API later
-Create/update `.env.local`:
-```env
-VITE_AUTH_MODE=real
-VITE_API_BASE_URL=https://localhost:7001/api
-```
-Then change the login payload/response mapping in `src/main.jsx` and endpoint paths in `src/api/client.js` to match your real DTOs/controllers.
+### ⚙️ Core Technologies
+
+- **Frontend:** React.js
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB
+- **Authentication:** JSON Web Tokens (JWT)
+- **API:** RESTful APIs
+
+### 🚀 Project Goals
+
+Improve transparency, streamline maintenance workflows, and simplify communication between residents and apartment administrators through a centralized digital platform.
+
+### 👨‍💻 Author
+
+**Mayank** | [GitHub](https://github.com/Mayank786-12)
+
